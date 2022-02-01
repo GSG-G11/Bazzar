@@ -13,8 +13,8 @@ let id = JSON.parse(localStorage.getItem('id')) || 0;
 function updateProducts(e) {
     e.preventDefault();
     const item={id , name:productName.value , link:imgLink.value , price:price.value , category:category.value}
-    const index = localStorage.getItem('editIndex');
-    if(index===undefined) index=productsArr.length;
+    const index = JSON.parse(localStorage.getItem('editIndex'));
+    if(index==='') index=productsArr.length;
     productsArr[index] = item;
     localStorage.setItem('products', JSON.stringify(productsArr))
     localStorage.removeItem('editIndex')
