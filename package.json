@@ -1,0 +1,25 @@
+{
+  "name": "bazzar",
+  "version": "1.0.0",
+  "description": "Week 2 project: Ecommerce APP",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G11/Bazzar.git"
+  },
+  "keywords": [
+    "Ecommerce"
+  ],
+  "author": "Team 2: Farah Shaqoura, Mayar Kabaja, Monther Alzamli, Ibrahim Jarada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G11/Bazzar/issues"
+  },
+  "homepage": "https://github.com/GSG-G11/Bazzar#readme",
+  "dependencies": {
+    "jest": "^27.4.7"
+  }
+}
