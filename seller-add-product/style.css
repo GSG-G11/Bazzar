@@ -30,8 +30,6 @@ main {
 .form #category {
   width: 40%;
 }
-
-
 .form .row input {
   width: 40%;
   font-size: 2rem;
@@ -48,9 +46,8 @@ main {
 select {
   text-align: center;
   font-size: 2rem;
-
 }
-nav{
+nav {
   height: 100px;
   max-width: 100%;
   display: flex;
@@ -61,7 +58,7 @@ nav{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-bottom: 20px;
 }
-nav h1{
+nav h1 {
   font-family: "Lobster", cursive;
   color: var(--main-color);
   font-size: 40px;

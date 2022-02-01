@@ -3,8 +3,8 @@ const price = document.getElementById('price');
 const imgLink = document.getElementById('img-link');
 const category = document.getElementById('category');
 const confirmBtn = document.getElementById('confirm');
-const form=document.querySelector('.form')
-const dashboardBtn=document.getElementById('dashboard')
+const form = document.querySelector('.form')
+const dashboardBtn = document.getElementById('dashboard')
 let productsArr = JSON.parse(localStorage.getItem('products')) || [];
 let id = JSON.parse(localStorage.getItem('id')) || 0;
 
@@ -12,9 +12,9 @@ let id = JSON.parse(localStorage.getItem('id')) || 0;
 
 function updateProducts(e) {
     e.preventDefault();
-    const item={id , name:productName.value , link:imgLink.value , price:price.value , category:category.value}
+    const item = { id, name: productName.value, link: imgLink.value, price: price.value, category: category.value }
     const index = JSON.parse(localStorage.getItem('editIndex'));
-    if(index==='') index=productsArr.length;
+    if (index === '') index = productsArr.length;
     productsArr[index] = item;
     localStorage.setItem('products', JSON.stringify(productsArr))
     localStorage.removeItem('editIndex')
@@ -23,6 +23,5 @@ function updateProducts(e) {
     form.reset();
 }
 
-form.addEventListener('submit',updateProducts);
-dashboardBtn.addEventListener('click',()=>location.href='../buyer-dashboard/buyer-dashboard.html')
-
+form.addEventListener('submit', updateProducts);
+dashboardBtn.addEventListener('click', () => location.href = '../seller-dashboard/seller-dashboard.html')
