@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Dongle", sans-serif;
+}
+body {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #ff5200;
+  --second-color: #eee;
+}
+nav {
+  height: 100px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 20px;
+}
+nav h1 {
+  font-family: "Lobster", cursive;
+  color: var(--main-color);
+  font-size: 40px;
+}
+nav .search {
+  border: none;
+  background-color: var(--second-color);
+  color: gray;
+  width: 300px;
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 15px;
+  font-size: 24px;
+}
+nav select {
+  width: 120px;
+  height: 50px;
+  border: none;
+  background-color: var(--second-color);
+  padding-left: 15px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+nav .btn-cart {
+  width: 100px;
+  height: 40px;
+  color: var(--second-color);
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 60px;
+}
+.section .card {
+  background-color: #eeeeee;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+.section .card img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+.section .card h2,
+.section .card p {
+  font-size: 40px;
+}
+.section .card button {
+  width: 100px;
+  height: 40px;
+  color: var(--second-color);
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
