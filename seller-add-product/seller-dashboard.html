@@ -4,38 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Seller Add Product</title>
   </head>
   <body>
-    <form class="form" action="#">
+    <nav>
+      <h1>Bazzar</h1>
+    </nav>
+    <main>
+      <form class="form" action="#">
         <div class="row">
-            <label for="name">Name</label>
-            <input type="text" name="" id="name" required>
+          <label for="name">Name</label>
+          <input type="text" name="" id="name" required />
         </div>
         <div class="row">
-            <label for="details">Details</label>
-            <input type="text" name="" id="details">
+          <label for="details">Details</label>
+          <input type="text" name="" id="details" />
         </div>
         <div class="row">
-            <label for="price">Price</label>
-            <input type="number" name="" id="price" required>
+          <label for="price">Price</label>
+          <input type="number" name="" id="price" required />
         </div>
         <div class="row">
-            <label for="img-link">Image Link</label>
-            <input type="url" name="" id="img-link" required>
+          <label for="img-link">Image Link</label>
+          <input type="url" name="" id="img-link" required />
         </div>
         <div class="row">
-            <label for="category">Category</label>
-            <select name="" id="category" required>
-                <option value="men">Mens</option>
-                <option value="women">Women</option>
-                <option value="childrens">Childrens</option>
-            </select>
+          <label for="category">Category</label>
+          <select name="" id="category" required>
+            <option value="men">Mens</option>
+            <option value="women">Women</option>
+            <option value="childrens">Childrens</option>
+          </select>
         </div>
-        <br>
+        <br />
         <button type="submit" id="confirm">Confirm</button>
-    </form>
+      </form>
+    </main>
   </body>
   <script src="main.js"></script>
 </html>

@@ -1,37 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dongle", sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+:root {
+  --main-color: #ff5200;
+  --second-color: #eee;
 }
-.row{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width:50%;
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
 }
-#category{
-    width:40%;
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  font-size: 2rem;
+}
+.form #category {
+  width: 40%;
 }
 
-.form .row input{
-    width: 40%;
+
+.form .row input {
+  width: 40%;
 }
-#confirm{
-    width: 40%;
+#confirm {
+  width: 40%;
+  font-size: 2rem;
+
 }
 
-select{
-    text-align: center;
+select {
+  text-align: center;
+  font-size: 2rem;
+
+}
+nav{
+  height: 100px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 20px;
+}
+nav h1{
+  font-family: "Lobster", cursive;
+  color: var(--main-color);
+  font-size: 40px;
 }
