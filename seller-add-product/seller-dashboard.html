@@ -8,21 +8,33 @@
     <title>Seller Add Product</title>
   </head>
   <body>
-    <form action="#">
-      <label for="name"></label>
-      <input type="text" name="" id="name" required>
-      <label for="detail"></label>
-      <input type="text" name="" id="detail">
-      <label for="price"></label>
-      <input type="text" name="" id="price" required>
-      <label for="image-link"></label>
-      <input type="text" name="" id="image-link" required>
-      <label for="category"></label>
-      <select name="" id="" required>
-          <option value="men">Mens</option>
-          <option value="women">Women</option>
-          <option value="childrens">Childrens</option>
-      </select>
+    <form class="form" action="#">
+        <div class="row">
+            <label for="name">Name</label>
+            <input type="text" name="" id="name" required>
+        </div>
+        <div class="row">
+            <label for="details">Details</label>
+            <input type="text" name="" id="details">
+        </div>
+        <div class="row">
+            <label for="price">Price</label>
+            <input type="number" name="" id="price" required>
+        </div>
+        <div class="row">
+            <label for="img-link">Image Link</label>
+            <input type="url" name="" id="img-link" required>
+        </div>
+        <div class="row">
+            <label for="category">Category</label>
+            <select name="" id="category" required>
+                <option value="men">Mens</option>
+                <option value="women">Women</option>
+                <option value="childrens">Childrens</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit" id="confirm">Confirm</button>
     </form>
   </body>
   <script src="main.js"></script>
