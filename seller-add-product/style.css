@@ -34,11 +34,15 @@ main {
 
 .form .row input {
   width: 40%;
+  font-size: 2rem;
+  padding-left: 15px;
 }
-#confirm {
+.form .row button {
   width: 40%;
   font-size: 2rem;
-
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 select {

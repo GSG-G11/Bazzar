@@ -4,7 +4,7 @@ const imgLink = document.getElementById('img-link');
 const category = document.getElementById('category');
 const confirmBtn = document.getElementById('confirm');
 const form=document.querySelector('.form')
-
+const dashboardBtn=document.getElementById('dashboard')
 let productsArr = JSON.parse(localStorage.getItem('products')) || [];
 let id = JSON.parse(localStorage.getItem('id')) || 0;
 
@@ -19,7 +19,9 @@ function updateProducts(e) {
     localStorage.removeItem('editIndex')
     id++;
     localStorage.setItem('id', JSON.stringify(id))
+    form.reset();
 }
 
-form.addEventListener('submit',updateProducts)
+form.addEventListener('submit',updateProducts);
+dashboardBtn.addEventListener('click',()=>location.href='../buyer-dashboard/buyer-dashboard.html')
 
