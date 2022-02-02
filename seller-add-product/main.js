@@ -6,14 +6,23 @@ const confirmBtn = document.getElementById('confirm');
 const form = document.querySelector('.form')
 const dashboardBtn = document.getElementById('dashboard')
 let id = JSON.parse(localStorage.getItem('id')) || 0;
+let editId = localStorage.getItem('editId');
+let productsArr = JSON.parse(localStorage.getItem('products')) || [];
 
-
+if (editId) {
+    const editIndex = productsArr.findIndex(item => item.id == editId);
+    toBeEdit=productsArr[editIndex];
+    productName.value =toBeEdit.name
+    imgLink.value =toBeEdit.link
+    price.value =toBeEdit.price
+    category.value =toBeEdit.category
+}
 
 function updateProducts(e) {
-    let productsArr = JSON.parse(localStorage.getItem('products')) || [];
+    productsArr = JSON.parse(localStorage.getItem('products')) || [];
     e.preventDefault();
     let item = { name: productName.value, link: imgLink.value, price: price.value, category: category.value }
-    const editId = localStorage.getItem('editId');
+    editId = localStorage.getItem('editId');
     if (editId) {
         productsArr = editItemInArray(productsArr, item, editId)
         localStorage.removeItem('editId')
