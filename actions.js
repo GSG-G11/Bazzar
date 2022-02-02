@@ -17,4 +17,19 @@ let filterCards = (value, productsArr) => {
   }
   return productsArr;
 };
-module.exports = { search, filterCards};
+
+function deleteItem(array, id) {
+  const resultArr = [...array];
+  const deleteIndex = resultArr.findIndex(item => item.id === id);
+  resultArr.splice(deleteIndex, 1);
+  return resultArr
+}
+
+function editItemInArray(array, item, id) {
+  const resultArr = [...array];
+  const editIndex = resultArr.findIndex(item => item.id == id);
+  resultArr[editIndex] = { id, ...item }
+  return resultArr
+}
+
+module.exports = { search, filterCards, deleteItem, editItemInArray };

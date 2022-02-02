@@ -5,20 +5,20 @@ const category = document.getElementById('category');
 const confirmBtn = document.getElementById('confirm');
 const form = document.querySelector('.form')
 const dashboardBtn = document.getElementById('dashboard')
-let productsArr = JSON.parse(localStorage.getItem('products')) || [];
 let id = JSON.parse(localStorage.getItem('id')) || 0;
 
 
 
 function updateProducts(e) {
+    let productsArr = JSON.parse(localStorage.getItem('products')) || [];
     e.preventDefault();
-    let item={name: productName.value, link: imgLink.value, price: price.value, category: category.value }
+    let item = { name: productName.value, link: imgLink.value, price: price.value, category: category.value }
     const editId = localStorage.getItem('editId');
-    if (editId){
-        // productsArr=editItemInArray(productsArr,item,editId)
+    if (editId) {
+        productsArr = editItemInArray(productsArr, item, editId)
         localStorage.removeItem('editId')
-    }else{
-        item={id,...item};
+    } else {
+        item = { id, ...item };
         productsArr.push(item)
         id++;
     }
