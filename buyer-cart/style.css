@@ -1,85 +1,103 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "Dongle", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Dongle", sans-serif;
 }
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
 }
 :root {
-    --main-color: #ff5200;
-    --second-color: #eee;
-  }
-nav{
-    height: 100px;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
-    align-items: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-bottom: 20px;
+  --main-color: #ff5200;
+  --second-color: #eee;
 }
-nav h1{
-    font-family: "Lobster", cursive;
-    color: var(--main-color);
-    font-size: 40px;
+nav {
+  height: 100px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 20px;
 }
-nav .btn-cart{
-    width: 100px;
-    height: 40px;
-    color: var(--second-color);
-    background-color: var(--main-color);
-    border: none;
-    border-radius: 15px;
-    font-size: 24px;
-    cursor: pointer;
+nav h1 {
+  font-family: "Lobster", cursive;
+  color: var(--main-color);
+  font-size: 40px;
+}
+nav .btn-cart {
+  width: 100px;
+  height: 40px;
+  color: var(--second-color);
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 15px;
+  font-size: 24px;
+  cursor: pointer;
 }
 .section {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 70px;
+  padding: 0 60px;
 
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    margin-top: 70px;
-    padding:  0 60px;
-
-    justify-content: center;
+  justify-content: center;
 }
-.section .buyed{
-
-    background-color: #eee;
-    height: 70px;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 60px;
-    border-radius: 5px;
-
+.section .buyed {
+  background-color: #eee;
+  height: 70px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  border-radius: 5px;
 }
-.section .buyed h2 ,.section .buyed p{
-    font-size: 40px;
+.section .buyed h2,
+.section .buyed p {
+  font-size: 40px;
 }
-.section .buyed button{
+.section .buyed button {
+  width: 100px;
+  height: 40px;
+  color: var(--second-color);
+
+  border: none;
+  border-radius: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.section .buyed .btnDelete {
+  background-color: rgb(182, 180, 180);
+}
+.section .buyed .btnPay {
+  background-color: var(--main-color);
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+ .deleteAll {
     width: 100px;
     height: 40px;
-    color: var(--second-color);
-
+    background-color: var(--main-color);
+    color: #fff;
     border: none;
     border-radius: 15px;
     font-size: 24px;
     cursor: pointer;
-}
-.section .buyed .btn-delete{
-    background-color: rgb(182, 180, 180);
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
 
 }
-.section .buyed .btn-Pay{
-    background-color: var(--main-color);
-}
-.btns {
-    display: flex;
-    justify-content: space-between;
-    width: 220px;
+h2 {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 300px;
 }
