@@ -2,6 +2,13 @@
 
 const section = document.querySelector(".section");
 
+let cartArr = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+cartArr.forEach(element => {
+    addCard(element)
+    
+});
 
 function addCard(object){
 
