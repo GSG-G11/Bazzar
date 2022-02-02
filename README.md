@@ -19,7 +19,8 @@ Build a website that allows buying clothes and sllows seller to offer the clothe
 - I want to be able to delete any items inside my cart.
 -  want to be able to see the total price of the items inside my cart.
 ### As a seller want to offer by product 
-As a seller I want to visit your website and be able to add my products and all details about it(name, detail, price, image, and category)
+As a seller I want to visit your website and be able to add my products and all details about it
+(name, detail, price, image, and category)
 - I want to be able to see all of my product.
 - I want to be able to search through my products.
 - I want to be able to delete my own product.
@@ -33,7 +34,7 @@ As a seller I want to visit your website and be able to add my products and all 
 - Also the total price of product you choose.
 ### If you are seller 
 - you are going to see add proudct page to add you product .
-- when clicking on the dashboard you will go to the page and see all products you add  see search through your product .
+- when clicking on the dashboard you will go to the page and see all products you add  see search through your product.
 - you can delete your product from the delete bottom also edit the details about the product for edit button.
 ## Tech Stack 
 - HTML
