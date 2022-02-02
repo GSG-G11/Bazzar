@@ -47,12 +47,14 @@ function addCard(object) {
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
   deleteButton.onclick = () => {
-    productsArr = deleteItem(productsArr, object.id);
-    localStorage.setItem('products', JSON.stringify(productsArr))
-    let value = document.getElementById('categories').value;
-    newArray = filterCards(value, productsArr);
-    newArray = search(searchInput.value.toLowerCase(), newArray);
-    dispalyCard(newArray);
+    if(prompt('Are you sure?!')){
+      productsArr = deleteItem(productsArr, object.id);
+      localStorage.setItem('products', JSON.stringify(productsArr))
+      let value = document.getElementById('categories').value;
+      newArray = filterCards(value, productsArr);
+      newArray = search(searchInput.value.toLowerCase(), newArray);
+      dispalyCard(newArray);
+    }
   }
   btnsContainer.appendChild(deleteButton)
 
