@@ -26,6 +26,7 @@ main {
   flex-direction: column;
   width: 50%;
   font-size: 2rem;
+  padding-top: 20px;
 }
 .form #category {
   width: 40%;
@@ -34,6 +35,9 @@ main {
   width: 40%;
   font-size: 2rem;
   padding-left: 15px;
+  border-radius: 15px;
+  outline: none;
+
 }
 .form .row button {
   width: 40%;
@@ -41,11 +45,16 @@ main {
   border: none;
   outline: none;
   cursor: pointer;
+  color: #eee;
+  background-color: #ff5200;
+  border-radius: 15px;
+
 }
 
 select {
   text-align: center;
   font-size: 2rem;
+  border-radius: 15px;
 }
 nav {
   height: 100px;

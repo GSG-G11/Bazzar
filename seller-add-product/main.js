@@ -12,16 +12,21 @@ let id = JSON.parse(localStorage.getItem('id')) || 0;
 
 function updateProducts(e) {
     e.preventDefault();
-    const item = { id, name: productName.value, link: imgLink.value, price: price.value, category: category.value }
-    const index = JSON.parse(localStorage.getItem('editIndex'));
-    if (index === '') index = productsArr.length;
-    productsArr[index] = item;
+    let item={name: productName.value, link: imgLink.value, price: price.value, category: category.value }
+    const editId = localStorage.getItem('editId');
+    if (editId){
+        // productsArr=editItemInArray(productsArr,item,editId)
+        localStorage.removeItem('editId')
+    }else{
+        item={id,...item};
+        productsArr.push(item)
+        id++;
+    }
     localStorage.setItem('products', JSON.stringify(productsArr))
-    localStorage.removeItem('editIndex')
-    id++;
     localStorage.setItem('id', JSON.stringify(id))
     form.reset();
 }
 
 form.addEventListener('submit', updateProducts);
 dashboardBtn.addEventListener('click', () => location.href = '../seller-dashboard/seller-dashboard.html')
+
