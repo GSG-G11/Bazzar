@@ -47,7 +47,7 @@ function addCard(object) {
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
   deleteButton.onclick = () => {
-    if(prompt('Are you sure?!')){
+    if(confirm('Are you sure?!')){
       productsArr = deleteItem(productsArr, object.id);
       localStorage.setItem('products', JSON.stringify(productsArr))
       let value = document.getElementById('categories').value;
