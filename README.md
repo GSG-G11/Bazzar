@@ -1,11 +1,13 @@
-# BAZZAR [Live link](https://gsg-g11.github.io/Bazzar/)
-
-# [Live link](https://gsg-g11.github.io/Bazzar/)
-Week 2 project: Ecommerce APP
-## Broblem
+# BAZZAR 
+[Live link](https://gsg-g11.github.io/Bazzar/)
+- [Problem](#Problem)
+- [User Stories](#user-stories)
+- [User Journey](#user-journey)
+- [Team Members](#team-members)
+## Problem
 Because of the circumstances and challenges the world is facing today due to Covid 19, which has made it difficult shopping
-## Sloution 
-Build a website that allows buying clothes and for the seller to offer the clothes
+## Solution
+Build a website that allows buying clothes and sllows seller to offer the clothes
 ## User Stories 
 ### As a buyer want to buy product 
 - I want to see all of the items available on the store.
@@ -23,7 +25,7 @@ As a seller I want to visit your website and be able to add my products and all 
 - I want to be able to delete my own product.
 - I want to be able to edit all the information of my product.
 ## User journey 
-- When you open Bazzar you will be faced with a home page to choose if you are buyer or seller,
+- When you open Bazzar you will be faced with a home page to choose if you are buyer or seller.
 ### If you are buyer 
 - you are going to see the products and details .
 - You can esaily reach to the product you want by filter or search it.
@@ -40,6 +42,6 @@ As a seller I want to visit your website and be able to add my products and all 
 - java sript
 ## Team Members
 - Ibrahim Jarada
-- Mayer Kabaja
+- Mayar Kabaja
 - Monther ismail 
 - Farah Shaqoura 
