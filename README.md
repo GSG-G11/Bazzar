@@ -4,7 +4,7 @@
 Week 2 project: Ecommerce APP
 ## Problem
 Because of the circumstances and challenges the world is facing today due to Covid 19, which has made it difficult shopping
-## Sloution 
+## Solution 
 Build a website that allows buying clothes and for the seller to offer the clothes
 ## User Stories 
 ### As a buyer want to buy product 
