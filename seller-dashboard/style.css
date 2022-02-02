@@ -89,3 +89,21 @@ nav .btn-cart {
   font-size: 24px;
   cursor: pointer;
 }
+.btn-add-pro {
+  width: 100px;
+  height: 40px;
+  color: var(--second-color);
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+}
+.btn-add-pro a {
+  text-decoration: none;
+  color: #ffff;
+}

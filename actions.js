@@ -36,4 +36,8 @@ const deleteItems = (Arr, id) => {
   Arr = [...newtArr];
   return Arr;
 };
-module.exports = { search, filterCards, deleteItem, editItemInArray ,deleteItems };
+function getTotalPrice(cartArray) {
+  return cartArray.reduce((acc, ele) => acc + Number(ele.price), 0);
+}
+
+module.exports = { search, filterCards, deleteItem, editItemInArray ,deleteItems,getTotalPrice };

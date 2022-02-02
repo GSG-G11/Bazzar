@@ -1,4 +1,4 @@
-const { search, filterCards, productsArr, deleteItem, editItemInArray,deleteItems } = require('./actions.js');
+const { search, filterCards, productsArr, deleteItem, editItemInArray,deleteItems,getTotalPrice } = require('./actions.js');
 
 
 test('checkFilter function ', function () {
@@ -55,3 +55,11 @@ describe('Testing deleteItem return value', () => {
         
     })
 })
+
+describe('Testing grtTotalPrice should return total Prices', () => {
+    test('should calculate total price', () => {
+        const actual = getTotalPrice([{id:1, price: 30,}, {id : 2, price: 50}, {id:3, price: 10}]);
+        const expected = 90;
+        expect(actual).toBe(expected);
+    });
+});
