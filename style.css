@@ -43,7 +43,14 @@ h1 {
   font-size: 100px;
   font-family: "Dongle", sans-serif;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  animation: animations 2s ease-out;
 }
+@keyframes animations {
+  0% {
+    transform: translateY(-100px);
+  }
+}
+
 .containter .text input {
   font-family: "Dongle", sans-serif;
   border: none;
