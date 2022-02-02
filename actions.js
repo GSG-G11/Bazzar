@@ -31,5 +31,9 @@ function editItemInArray(array, item, id) {
   resultArr[editIndex] = { id, ...item }
   return resultArr
 }
-
-module.exports = { search, filterCards, deleteItem, editItemInArray };
+const deleteItems = (Arr, id) => {
+  let newtArr = Arr.filter((obj) => obj.id !== id);
+  Arr = [...newtArr];
+  return Arr;
+};
+module.exports = { search, filterCards, deleteItem, editItemInArray ,deleteItems };

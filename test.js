@@ -1,4 +1,4 @@
-const { search, filterCards, productsArr, deleteItem, editItemInArray } = require('./actions.js');
+const { search, filterCards, productsArr, deleteItem, editItemInArray,deleteItems } = require('./actions.js');
 
 
 test('checkFilter function ', function () {
@@ -45,5 +45,13 @@ describe('Testing deleteItem return value', () => {
         const actual = deleteItem([{ id: 2 }, { id: 4 }, { id: 7 }], 7)
         const expected = [{ id: 2 }, { id: 4 }];
         expect(actual).toEqual(expected)
+    })
+    test('delet itme in arr .', function () {
+        expect(deleteItems([{id:3},{id:6}] , 3)).toEqual([{id:6}]);
+        
+    });
+    test('delet itme in arr .', function () {
+        expect(deleteItems([{id:3},{id:6},{id:7}] , 3)).toEqual([{id:6},{id:7}]);
+        
     })
 })

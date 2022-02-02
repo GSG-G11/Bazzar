@@ -77,7 +77,7 @@ const deleteItms = (Arr, id) => {
 };
 
 function getTotalPrice(cartArray) {
-  return cartArray.reduce((acc, ele) => acc + ele.price, 0);
+  return cartArray.reduce((acc, ele) => acc + Number(ele.price), 0);
 }
 
 let totalPrice = getTotalPrice(cartArr);
