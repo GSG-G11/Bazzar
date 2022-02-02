@@ -33,11 +33,13 @@ main {
 }
 .form .row input {
   width: 40%;
-  font-size: 2rem;
+  font-size: 24px;
   padding-left: 15px;
+  padding-top: 5px;
   border-radius: 15px;
   outline: none;
-
+  border: none;
+  background-color: var(--second-color);
 }
 .form .row button {
   width: 40%;
@@ -48,9 +50,13 @@ main {
   color: #eee;
   background-color: #ff5200;
   border-radius: 15px;
-
 }
-
+.form .row button:hover {
+  color: #000;
+}
+#dashboard {
+  background-color: #979797;
+}
 select {
   text-align: center;
   font-size: 2rem;
