@@ -43,10 +43,12 @@ function addbuyed(object) {
   btns.appendChild(btnDelete);
 
   btnDelete.addEventListener("click", () => {
-   
-    localStorage.setItem("cart", JSON.stringify( deleteItms(cartArr , object.id)));
+    localStorage.setItem(
+      "cart",
+      JSON.stringify(deleteItms(cartArr, object.id))
+    );
 
-    (btnDelete.parentElement).parentElement.remove();
+    btnDelete.parentElement.parentElement.remove();
   });
 
   //create  (buy btn )
@@ -55,8 +57,6 @@ function addbuyed(object) {
 
   btnBuy.className = "btnPay";
   btns.appendChild(btnBuy);
-
-  
 
   return buyed;
 }
@@ -70,9 +70,17 @@ deleteAll.addEventListener("click", () => {
   document.querySelectorAll(".buyed").forEach((e) => e.remove());
 });
 
+const deleteItms = (Arr, id) => {
+  let newtArr = Arr.filter((obj) => obj.id !== id);
+  Arr = [...newtArr];
+  return Arr;
+};
 
-const deleteItms = (Arr , id) => {
-    let newtArr = Arr.filter((obj) => obj.id !== id);
-   Arr = [...newtArr];
-   return Arr;
+function getTotalPrice(cartArray) {
+  return cartArray.reduce((acc, ele) => acc + ele.price, 0);
 }
+
+let totalPrice = getTotalPrice(cartArr);
+let textTotalPrice = document.createTextNode(totalPrice);
+const totalPriceSpan = document.querySelector(".totalPrice");
+totalPriceSpan.appendChild(textTotalPrice);
