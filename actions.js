@@ -1,16 +1,11 @@
-
-let productsArr = JSON.parse(localStorage.getItem('products')) || [];
-
-
-
 let search = (value, productsArr) => {
+  let newArray = [...productsArr]
   if (value) {
-    let newArray = productsArr.filter(ele => {
-      return ele.name.includes(value);
+    newArray = productsArr.filter(ele => {
+      return ele.name.toLowerCase().includes(value);
     });
-
-    return newArray;
   }
+  return newArray;
 };
 
 let filterCards = (value, productsArr) => {
@@ -22,4 +17,4 @@ let filterCards = (value, productsArr) => {
   }
   return productsArr;
 };
-module.exports = { search, filterCards, productsArr };
+module.exports = { search, filterCards};

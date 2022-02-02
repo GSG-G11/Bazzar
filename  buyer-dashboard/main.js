@@ -2,8 +2,8 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 const section = document.querySelector(".section");
 const searchInput = document.getElementById("search");
-let newArray=[];
 let productsArr = JSON.parse(localStorage.getItem('products')) || [];
+let newArray=productsArr;
 function addCard(object) {
   const card = document.createElement("div");
   card.classList.add("card");
@@ -54,17 +54,16 @@ const addToCart=(object)=>{
 categories.addEventListener("change",()=>{
   let value= document.getElementById('categories').value;
  
-   newArray= filterCards(value,productsArr);
-  
+   newArray= filterCards(value,productsArr) ;
    dispalyCard(newArray);
 })
 
 
 searchInput.addEventListener("input", (event)=>{
-
- 
+  let value= document.getElementById('categories').value;
     event.preventDefault();
-    newArray=search(searchInput.value,newArray);
+    newArray= filterCards(value,productsArr) ;
+    newArray=search(searchInput.value.toLowerCase(),newArray);
    dispalyCard(newArray);
    
   
