@@ -1,5 +1,5 @@
-let search = (value, productsArr) => {
-  let newArray = [...productsArr]
+const search = (value, productsArr) => {
+  const newArray = [...productsArr]
   if (value) {
     newArray = productsArr.filter(ele => {
       return ele.name.toLowerCase().includes(value);
@@ -8,9 +8,9 @@ let search = (value, productsArr) => {
   return newArray;
 };
 
-let filterCards = (value, productsArr) => {
+const filterCards = (value, productsArr) => {
   if (value !== "All") {
-    let newArray = productsArr.filter(ele => {
+    const newArray = productsArr.filter(ele => {
       return ele.category === value;
     });
     return newArray;
