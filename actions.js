@@ -1,11 +1,10 @@
 const search = (value, productsArr) => {
-  const newArray = [...productsArr]
   if (value) {
-    newArray = productsArr.filter(ele => {
+    return productsArr.filter((ele) => {
       return ele.name.toLowerCase().includes(value);
     });
   }
-  return newArray;
+  return productsArr;
 };
 
 const filterCards = (value, productsArr) => {
