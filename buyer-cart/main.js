@@ -43,11 +43,13 @@ function addbuyed(object) {
   btns.appendChild(btnDelete);
 
   btnDelete.addEventListener("click", () => {
+    cartArr=deleteItms(cartArr, object.id);
     localStorage.setItem(
       "cart",
-      JSON.stringify(deleteItms(cartArr, object.id))
+      JSON.stringify(cartArr)
     );
-
+    totalPrice = getTotalPrice(cartArr);
+    textTotalPrice.textContent=totalPrice;
     btnDelete.parentElement.parentElement.remove();
   });
 
@@ -71,9 +73,7 @@ deleteAll.addEventListener("click", () => {
 });
 
 const deleteItms = (Arr, id) => {
-  let newtArr = Arr.filter((obj) => obj.id !== id);
-  Arr = [...newtArr];
-  return Arr;
+    return Arr.filter((obj) => obj.id !== id)
 };
 
 function getTotalPrice(cartArray) {
