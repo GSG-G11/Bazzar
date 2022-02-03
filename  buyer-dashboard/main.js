@@ -20,14 +20,14 @@ function addCard(object) {
 
   //create h2 (Product Name)
   const ProductName = document.createElement("h2");
-  ProductName.innerHTML = object.name;
+  ProductName.textContent = object.name;
 
   //add h2 in card
   card.appendChild(ProductName);
 
   //create  (price Name)
   const price = document.createElement("p");
-  price.innerHTML = object.price;
+  price.textContent = object.price;
 
   //add price in card
   card.appendChild(price);
